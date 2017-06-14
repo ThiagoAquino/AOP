@@ -17,7 +17,6 @@ public class ConcurrencyManager {
 		while (keys.containsKey(key)) {
 			//System.out.println("You have to wait -> ConcurrencyManager");
 			wait();
-
 		}
 		//System.out.println("You can execute -> ConcurrencyManager");
 		keys.put(key, null);
