@@ -1,4 +1,4 @@
-package Aspects;
+package aspects;
 
 public aspect DeclareStatements {
 

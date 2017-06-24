@@ -1,4 +1,4 @@
-package Aspects;
+package aspects;
 
 import healthwatcher.model.employee.Employee;
 import lib.concurrency.ConcurrencyManager;

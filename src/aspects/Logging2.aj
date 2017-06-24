@@ -1,4 +1,4 @@
-package Aspects;
+package aspects;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -12,7 +12,7 @@ public aspect Logging2 {
 	public @interface LoggingInterfaceType {}
 	
 	pointcut log(): (@annotation(LoggingInterface) || @within(LoggingInterfaceType))
-	&& execution(* *(..)); 
+	&& (execution(* *(..)) || execution(*.new(..)));
 
 	before(): log() {
 		System.out.println(thisJoinPoint);

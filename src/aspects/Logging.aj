@@ -1,4 +1,4 @@
-package Aspects;
+package aspects;
 import healthwatcher.data.rdb.*;
 import healthwatcher.model.employee.*;
 
